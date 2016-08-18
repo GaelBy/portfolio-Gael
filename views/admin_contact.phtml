@@ -1,0 +1,6 @@
+<a href="admin/contact/<?=htmlentities($contact->getId())?>" class="contact_line clearfix <?=$read?>">
+	<div class="name"><?=htmlentities($contact->getSender()->getName())?></div>
+	<div class="society"><?=htmlentities($contact->getSender()->getSociety())?></div>
+	<div class="title"><?=htmlentities($contact->getTitle())?></div>
+	<div class="date"><?=htmlentities(date('d/m/Y H:i', strtotime($contact->getDate())))?></div>
+</a>

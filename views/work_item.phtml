@@ -1,0 +1,8 @@
+<article class="work">
+	<h2><?=htmlentities($work->getTitle())?></h2>
+	<a href="<?=htmlentities($work->getUrl())?>" target="_blank"><img src="<?=htmlentities($work->getImage())?>" alt="<?=htmlentities($work->getTitle())?>"></a>
+	<p><?=htmlentities($work->getDescription())?></p>
+	<div class="<?=$admin?>">
+		<a href="admin/work/<?=$work->getId()?>" class="btn">Modifier</a>
+	</div>
+</article>

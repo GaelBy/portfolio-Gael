@@ -1,0 +1,16 @@
+<h1><?=htmlentities($contact->getTitle())?></h1>
+<div class="sender">
+	<div class="clearfix">
+		<div class="name"><?=htmlentities($contact->getSender()->getName())?></div>
+		<div class="society"><?=htmlentities($contact->getSender()->getSociety())?></div>
+	</div>
+	<div class="clearfix">
+		<div class="email"><?=htmlentities($contact->getsender()->getEmail())?></div>
+		<div class="tel"><?=htmlentities($contact->getSender()->getTel())?></div>
+		<div class="date"><?=htmlentities(date('d/m/Y H:i', strtotime($contact->getDate())))?></div>
+	</div>
+</div>
+<p class="content"><?=htmlentities($contact->getContent())?></p>
+<form action="" method="POST" class="read">
+	<button class="btn" type="submit" name="id" value="<?=htmlentities($contact->getId())?>">Marquer comme lu</button>
+</form>

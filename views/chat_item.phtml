@@ -1,0 +1,23 @@
+<div class="chat_item_box clearfix">
+	<div class="message_box clearfix">
+		<span class="date">
+			<?=htmlentities(date('d/m/Y H:i:s', strtotime($message->getDate())))?>
+		</span>
+		<span class="sender">
+			<?=htmlentities($message->getUser()->getLogin())?> :
+		</span>
+		<span class="message">
+			<?=htmlentities($message->getContent())?>
+		</span>
+	</div>
+	<div class="<?=$admin?> chat_admin">
+		<form action="" method="POST">
+			<input type="hidden" name="id" value="<?=$message->getId()?>">
+			<button class="btn" type="submit" name="admin" value="moderate">Modérer</button>
+		</form>
+		<form action="" method="POST">
+			<input type="hidden" name="id" value="<?=$message->getUser()->getId()?>">
+			<button class="btn" type="submit" name="admin" value="ban">Bannir</button>
+		</form>
+	</div>
+</div>

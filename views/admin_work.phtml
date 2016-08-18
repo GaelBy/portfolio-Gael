@@ -1,0 +1,23 @@
+<h1><?=$action?> une réalisation</h1>
+<div class="error"><?=$error?></div>
+<form action="" method="POST" class="clearfix work_form">
+	<div class="work_item">
+		<label for="title">Titre</label>
+		<input type="text" name="title" id="title" value="<?=htmlentities($work->getTitle())?>">
+	</div>
+	<div class="work_item">
+		<label for="description">Description</label>
+		<textarea name="description" id="description" rows="10"><?=htmlentities($work->getDescription())?></textarea>
+	</div>
+	<div class="work_item">
+		<label for="image">Image</label>
+		<input type="text" name="image" id="image" value="<?=htmlentities($work->getImage())?>">
+	</div>
+	<div class="work_item">
+		<label for="url">Url</label>
+		<input type="text" name="url" id="url" value="<?=htmlentities($work->getUrl())?>">
+	</div>
+	<div class="work_item">
+		<button class="btn" type="submit" name="id" value="<?=htmlentities($work->getId())?>">Envoyer</button>
+	</div>
+</form>

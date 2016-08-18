@@ -1,0 +1,395 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #96b;
+}
+a{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+.btn{
+	border-radius: 5px;
+	border: 1px solid #666;
+	padding: 3px 5px;
+	background: #ddd;
+	color: #333;
+	display: inline-block;
+}
+.error{
+	color: #f00;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.hide{
+	display: none;
+}
+header, footer{
+	background: #225;
+	text-align: center;
+}
+header li, footer li{
+	display: inline-block;
+}
+header li a{
+	display: inline-block;
+	padding: 15px 5px;
+	text-transform: uppercase;
+	color: #ccc;
+	font-family: 'Amiko', sans-serif;
+}
+header li a:hover{
+	background: #bbe;
+	color: #333;
+	transition: all 0.3s ease;
+}
+footer li a{
+	display: inline-block;
+	padding: 10px 5px;
+	color: #ccc;
+	font-size: 0.9rem;
+}
+footer li a:hover{
+	color: #99e;
+}
+footer p{
+	color: #ccc;
+	padding: 10px 5px 20px;
+	font-size: 1.1rem;
+}
+.main{
+	max-width: 1100px;
+	margin: 0 auto;
+	color: #333;
+	min-height: 600px;
+}
+h1{
+	font-size: 2.5rem;
+	margin-left: 10px;
+	padding: 20px 0;
+}
+h2{
+	font-size: 1.8rem;
+	margin-left: 10px;
+	padding-bottom: 40px;
+}
+.col{
+	float: left;
+	width: 33%;
+}
+article{
+	padding: 0 1%;
+	text-align: center;
+}
+.container{
+	color: #333;
+	background: rgba(180,180,180,0.5);
+	margin: 0 5%;
+	min-height: 380px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+.container:hover{
+	transform: scale(1.2,1.2);
+	transition: all 0.3s ease;
+}
+.container img{
+	padding: 10px 20px;
+}
+article h3{
+	font-size: 1.2rem;
+	padding: 10px 0;
+}
+article p{
+	padding: 10px;
+}
+.chat_container{
+	margin: 45px 15px 15px;
+	border: solid 1px #555;
+	border-radius: 5px;
+	overflow-y: auto;
+	max-height: 400px;
+}
+.chat_box{
+	min-height: 30px;
+	border-bottom: 1px solid #555;
+	background: rgba(180,180,180,0.3);
+}
+.chat_box .chat_item_box:nth-child(even){
+	background: rgba(220,220,220,0.3);
+}
+.message_box{
+	padding: 5px 15px;
+	display: inline-block;
+	max-width: 100%;
+}
+.message_box .date, .message_box .sender, .message_box .message{
+	padding-right: 5px;
+}
+.message_box .message{
+	word-wrap: break-word;
+}
+.chat_admin{
+	float: right;
+	text-align: right;
+	margin-right: 10px;
+	padding: 5px;
+}
+.chat_admin form{
+	display: inline-block;
+}
+.form_box{
+	padding: 5px;
+}
+.form_box .send input{
+	width: 90%;
+	border-radius: 5px;
+	border: 1px solid #666;
+	background: rgba(240,240,240,0.5);
+	padding: 5px;
+}
+.login{
+	text-align: center;
+}
+.login .form_item{
+	padding: 5px;
+	display: inline-block;
+}
+.login label{
+	width: 120px;
+	margin-right: 10px;
+}
+.login input{
+	background: rgba(240,240,240,0.5);
+	border-radius: 5px;
+	border: 1px solid #666;
+	margin-top: -2px;
+	padding: 3px 5px;
+}
+.login button{
+	margin-left: 30px;
+	margin-top: -2px;
+}
+.intro figure{
+	text-align: center;
+}
+.intro p{
+	padding: 5px 10px 20px;
+	font-size: 1.1rem;
+	line-height: 20px;
+}
+.tech{
+	float: left;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.tech .container{
+	padding: 10px;
+	min-height: 350px;
+}
+.inte{
+	width: 50%;
+}
+.inte:first-child .container{
+	position: relative;
+	left: 15%;
+}
+.inte:last-child .container{
+	position: relative;
+	right: 15%;
+}
+.dev{
+	width: 33%;
+}
+.inte .container{
+	margin: 0 20%;
+}
+.tech h3{
+	font-size: 1.5rem;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.tech p{
+	padding-top: 20px;
+}
+.bar100{
+	width: 100%;
+}
+.bar75{
+	width: 75%;
+}
+.bar{
+	height: 12px;
+	background: #0d0;
+	margin-top: 10px;
+	width: 0;
+}
+.container:hover .bar{
+	animation: barFill 0.8s ease;
+	width: 100%;
+}
+@keyframes barFill{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 100%;
+	}
+}
+.misc{
+	width: 33%;
+	float: left;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.misc .container{
+	padding: 10px 30px;
+	min-height: 250px;
+}
+.misc h4{
+	padding: 15px;
+}
+.qualite h2{
+	padding-bottom: 20px;
+}
+.qualite ul{
+	margin-left: 30px;
+	padding-bottom: 20px;
+}
+.qualite li{
+	list-style: disc;
+	line-height: 18px;
+}
+.work{
+	margin-bottom: 30px;
+}
+.contact, .work_form{
+	position: relative;
+	left: 15%;
+}
+.contact .contact_item, .work_form .work_item{
+	padding: 5px;
+}
+.contact label{
+	display: inline-block;
+	width: 150px;
+}
+.contact input, .contact textarea, .work_form input, .work_form textarea{
+	width: 270px;
+	vertical-align: top;
+}
+.contact button{
+	position: relative;
+	left: 150px;
+}
+.mail{
+	padding: 10px;
+	font-size: 1.1rem;
+	margin-left: 5%;
+}
+.mail i{
+	padding: 5px;
+	font-size: 1.2rem;
+}
+.poste{
+	max-width: 800px;
+	padding: 10px;
+}
+.login .login_item{
+	padding: 5px;
+}
+.login_item label{
+	display: inline-block;
+	text-align: right;
+}
+.contact_line{
+	color: #333;
+	display: block;
+}
+.messages .name{
+	float: left;
+	width: 16%;
+	padding: 5px;
+}
+.messages .society{
+	float: left;
+	width: 30%;
+	padding: 5px;
+}
+.messages .title{
+	float: left;
+	width: 40%;
+	padding: 5px;
+}
+.messages .date{
+	float: left;
+	width: 14%;
+	padding: 5px;
+}
+.strong{
+	font-weight: bold;
+}
+.messages_header, .messages .contact_line:nth-child(even){
+	background: rgba(180,180,180,0.5);
+}
+.sender .name{
+	max-width: 25%;
+	float: left;
+	padding: 5px;
+}
+.sender .society{
+	width: 75%;
+	float: left;
+	padding: 5px;
+}
+.sender .email, .sender .tel, .sender .date{
+	max-width: 33%;
+	float: left;
+	padding: 5px;
+}
+.content{
+	padding: 10px 5px 15px;
+}
+.work_form label{
+	display: inline-block;
+	width: 100px;
+}
+.work_form button{
+	position: relative;
+	left: 100px;
+}
+
+@media screen and (max-width:768px){
+	header li, header li a{
+		display: block;
+	}
+	.col, .tech, .misc{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.inte .container, .contact{
+		left: 0 !important;
+	}
+	.container:hover{
+		transform: scale(1,1);
+	}
+	.form_box .send input{
+		width: 75%;
+	}
+	.contact label{
+		display: block;
+		width: 100% !important;
+	}
+	.contact input, .contact textarea, .work_form input, .work_form textarea{
+		width: 100% !important;
+	}
+	.contact button{
+		left: 0;
+	}
+}
