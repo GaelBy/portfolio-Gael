@@ -7,7 +7,7 @@ function __autoload($class_name)
 	require('models/'.$class_name.'.class.php');
 }
 require('config.php');
-$link = mysqli_connect($localhost, $login, $pass, $database);
+$link = mysqli_connect($host, $login, $pass, $database);
 if (!$link)
 {
 	require('views/bigerror.phtml');
