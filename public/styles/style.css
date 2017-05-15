@@ -3,20 +3,20 @@
 }
 body{
 	font-family: 'Roboto', sans-serif;
-	background: #96b;
+	background: linear-gradient(0deg, #aaf, #aab);
 }
 a{
 	text-decoration: none;
 }
 img{
-	max-width: 100%;
+	max-width: 100% !important;
 }
 .btn{
 	border-radius: 5px;
 	border: 1px solid #666;
 	padding: 3px 5px;
 	background: #ddd;
-	color: #333;
+	color: #222;
 	display: inline-block;
 }
 .error{
@@ -30,8 +30,22 @@ img{
 .hide{
 	display: none;
 }
+.owl-dots{
+	text-align: center;
+}
+.owl-dot{
+	width: 12px;
+	height: 12px;
+	margin: 30px 6px 0;
+	border-radius: 6px;
+	display: inline-block;
+	background-color: #aaa;
+}
+.owl-dot.active{
+	background-color: #ccc;
+}
 header, footer{
-	background: #225;
+	background: #336;
 	text-align: center;
 }
 header li, footer li{
@@ -46,7 +60,7 @@ header li a{
 }
 header li a:hover{
 	background: #bbe;
-	color: #333;
+	color: #222;
 	transition: all 0.3s ease;
 }
 footer a{
@@ -69,7 +83,7 @@ footer p{
 .main{
 	max-width: 1100px;
 	margin: 0 auto;
-	color: #333;
+	color: #222;
 	min-height: 600px;
 }
 h1{
@@ -91,14 +105,16 @@ article{
 	text-align: center;
 }
 .container{
-	color: #333;
-	background: rgba(180,180,180,0.5);
+	color: #222;
+	background: rgba(150,150,210,0.5);
 	margin: 0 5%;
 	min-height: 380px;
 	border-radius: 5px;
+}
+.zoom{
 	transition: all 0.3s ease;
 }
-.container:hover{
+.zoom:hover{
 	transform: scale(1.2,1.2);
 	transition: all 0.3s ease;
 }
@@ -229,7 +245,7 @@ article p{
 }
 .bar{
 	height: 12px;
-	background: #0d0;
+	background: #0c0;
 	margin-top: 10px;
 	width: 0;
 }
@@ -247,7 +263,7 @@ article p{
 }
 .misc{
 	width: 33%;
-	float: left;
+	margin: auto;
 	text-align: center;
 	margin-bottom: 50px;
 }
@@ -269,9 +285,10 @@ article p{
 	list-style: disc;
 	line-height: 18px;
 }
-.work{
+.works{
 	margin-bottom: 30px;
 }
+
 .contact, .work_form{
 	position: relative;
 	left: 15%;
@@ -312,7 +329,7 @@ article p{
 	text-align: right;
 }
 .contact_line{
-	color: #333;
+	color: #222;
 	display: block;
 }
 .messages .name{
@@ -339,7 +356,7 @@ article p{
 	font-weight: bold;
 }
 .messages_header, .messages .contact_line:nth-child(even){
-	background: rgba(180,180,180,0.5);
+	background: rgba(160,160,160,0.5);
 }
 .sender .name{
 	max-width: 25%;
@@ -379,7 +396,7 @@ article p{
 	.inte .container, .contact{
 		left: 0 !important;
 	}
-	.container:hover{
+	.zoom:hover{
 		transform: scale(1,1);
 	}
 	.form_box .send input{
